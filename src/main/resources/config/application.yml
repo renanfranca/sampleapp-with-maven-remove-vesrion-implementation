@@ -20,6 +20,11 @@ spring:
         queue-capacity: 100
         max-size: 16
       thread-name-prefix: sampleapp-task-
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false
 server:
   port: 8081
 management:
