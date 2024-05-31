@@ -102,3 +102,9 @@ application:
   security:
     oauth2:
       audience: account,api://default
+springdoc:
+  swagger-ui:
+    operationsSorter: alpha
+    tagsSorter: alpha
+    tryItOutEnabled: true
+  enable-native-support: true
