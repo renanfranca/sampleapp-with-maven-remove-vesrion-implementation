@@ -33,6 +33,14 @@ npm install
 ./mvnw 
 ```
 
+```bash
+docker compose -f src/main/docker/sonar.yml up -d
+```
+
+```bash
+./mvnw clean verify sonar:sonar
+```
+
 
 <!-- jhipster-needle-startupCommand -->
 
@@ -45,5 +53,6 @@ npm install
 - [CORS configuration](documentation/cors-configuration.md)
 - [Dev tools](documentation/dev-tools.md)
 - [Vue](documentation/vue.md)
+- [sonar](documentation/sonar.md)
 
 <!-- jhipster-needle-documentation -->
