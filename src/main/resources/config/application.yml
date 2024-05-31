@@ -9,6 +9,17 @@ spring:
   threads:
     virtual:
       enabled: true
+  task:
+    scheduling:
+      thread-name-prefix: sampleapp-scheduling-
+      pool:
+        size: 2
+    execution:
+      pool:
+        keep-alive: 10s
+        queue-capacity: 100
+        max-size: 16
+      thread-name-prefix: sampleapp-task-
 server:
   port: 8081
 management:
