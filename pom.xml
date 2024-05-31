@@ -33,6 +33,11 @@
       <version>${mockito.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+    </dependency>
   </dependencies>
 
   <properties>
@@ -49,6 +54,7 @@
     <surefire-plugin.version>3.2.5</surefire-plugin.version>
     <failsafe-plugin.version>3.2.5</failsafe-plugin.version>
     <jacoco.version>0.8.11</jacoco.version>
+    <commons-lang3.version>3.14.0</commons-lang3.version>
   </properties>
 
   <build>
