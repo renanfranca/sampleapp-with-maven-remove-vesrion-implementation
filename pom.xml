@@ -70,6 +70,11 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
+      <version>${liquibase.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
@@ -121,6 +126,7 @@
     <properties-maven-plugin.version>1.2.1</properties-maven-plugin.version>
     <sonar-maven-plugin.version>3.11.0.3922</sonar-maven-plugin.version>
     <testcontainers.version>1.19.8</testcontainers.version>
+    <liquibase.version>4.28.0</liquibase.version>
   </properties>
 
   <build>
