@@ -60,6 +60,17 @@ spring:
     open-in-view: false
   liquibase:
     change-log: classpath:config/liquibase/master.xml
+  security:
+    oauth2:
+      client:
+        registration:
+          oidc:
+            client-secret: web_app
+            client-id: web_app
+            scope: openid,profile,email
+        provider:
+          oidc:
+            issuer-uri: http://localhost:9080/realms/jhipster
 server:
   port: 8081
 management:
@@ -87,3 +98,7 @@ management:
       enabled: true
     env:
       enabled: true
+application:
+  security:
+    oauth2:
+      audience: account,api://default
