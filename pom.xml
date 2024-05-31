@@ -147,6 +147,24 @@
       <artifactId>junit-platform-suite</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-api</artifactId>
+      <version>${json-web-token.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-impl</artifactId>
+      <version>${json-web-token.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-jackson</artifactId>
+      <version>${json-web-token.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <properties>
@@ -179,6 +197,7 @@
     <liquibase.version>4.28.0</liquibase.version>
     <springdoc-openapi-starter-webmvc.version>2.5.0</springdoc-openapi-starter-webmvc.version>
     <cucumber.version>7.18.0</cucumber.version>
+    <json-web-token.version>0.12.5</json-web-token.version>
   </properties>
 
   <build>
